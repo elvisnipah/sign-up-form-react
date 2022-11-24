@@ -35,8 +35,8 @@ function handleChange(event) {
         </p>
       </div>
       <div className="flex flex-col items-center">
-        <button className="mt-10 bg-purple-700 py-6 rounded-2xl px-12 shadow-lg shadow-gray-500 text-center cursor-default w-full"><strong>Try it free 7 days</strong> then $20/mo. thereafter</button>
-        <form action="" className="mt-10 flex flex-col items-center gap-5 bg-white p-5 rounded-xl">
+        <button className="mt-10 bg-purple-700 py-6 rounded-2xl px-12 shadow-[0px_7px_0px_0px_rgba(0,0,0,0.2)] text-center cursor-default w-full"><strong>Try it free 7 days</strong> then $20/mo. thereafter</button>
+        <form action="" className="mt-10 flex flex-col items-center gap-5 bg-white p-5 rounded-xl shadow-[0px_9px_0px_0px_rgba(0,0,0,0.2)] ">
           <input
             type="text"
             placeholder="First Name"
@@ -70,7 +70,7 @@ function handleChange(event) {
             value={formData.password}
           />
         
-          <button className="bg-green-400 p-5 rounded-lg font-bold w-[95%] shadow-lg shadow-green-600">CLAIM YOUR FREE TRIAL</button>
+          <button className="bg-green-400 p-5 rounded-lg font-bold w-[95%] shadow-[0px_5px_0px_0px_rgba(0,156,0,0.8)]">CLAIM YOUR FREE TRIAL</button>
           <p className="text-gray-400 text-center p-2">By clicking the button, you are agreeing to our <span className="font-bold text-red-500">Terms and Services</span></p>
         </form>
       </div>
