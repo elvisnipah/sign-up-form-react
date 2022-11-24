@@ -16,14 +16,15 @@ function handleChange(event) {
   setFormData((prevFormData) => {
       return {
           ...prevFormData,
+          //if the type of input is a checkbox, change the checked field. else change the value field
           [name]: type === "checkbox" ? checked : value 
       }
   })
 }
 
   return (
-    <div className="bg-[url('./images/bg-intro-mobile.png')] flex flex-col sm:flex-row  grow justify-around items-center p-5 bg-red-400 text-white sm:p-10">
-      <div className="flex flex-col items-center justify-center">
+    <div className="bg-[url('./images/bg-intro-mobile.png')] flex flex-col  grow justify-around items-center p-5 bg-red-400 text-white sm:p-10 sm:flex-row sm:justify-center sm:gap-8">
+      <div className="flex flex-col items-center justify-center sm:w-1/3">
         <p className="text-2xl p-8 text-center font-bold sm:text-5xl sm:text-left">
           Learn to code by watching others
         </p>
@@ -34,7 +35,7 @@ function handleChange(event) {
         </p>
       </div>
       <div className="flex flex-col items-center">
-        <button className="mt-10 bg-purple-700 py-6 rounded-2xl px-12 shadow-lg shadow-purple-400 text-center"><strong>Try it free 7 days</strong> then $20/mo. thereafter</button>
+        <button className="mt-10 bg-purple-700 py-6 rounded-2xl px-12 shadow-lg shadow-gray-500 text-center cursor-default w-full"><strong>Try it free 7 days</strong> then $20/mo. thereafter</button>
         <form action="" className="mt-10 flex flex-col items-center gap-5 bg-white p-5 rounded-xl">
           <input
             type="text"
