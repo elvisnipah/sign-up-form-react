@@ -1,8 +1,5 @@
 import { useState } from "react";
 import "./App.css";
-import mobileBg from "./images/bg-intro-mobile.png";
-import desktopBg from "./images/bg-intro-desktop.png";
-import errorIcon from "./images/icon-error.svg";
 
 function App() {
   const [formData, setFormData] = useState({
@@ -66,7 +63,9 @@ function App() {
   }
 
   return (
-    <div className="bg-[url('./images/bg-intro-mobile.png')] sm:bg-[url('./images/bg-intro-desktop.png')] flex flex-col  grow justify-around items-center p-5 bg-red-400 text-white sm:p-10 sm:flex-row sm:justify-center sm:gap-8">
+    <div
+      className={`bg-[url('../public/images/bg-intro-mobile.png')] sm:bg-[url('../public/images/bg-intro-desktop.png')] flex flex-col  grow justify-around items-center p-5 bg-red-400 text-white sm:p-10 sm:flex-row sm:justify-center sm:gap-8`}
+    >
       <div className="flex flex-col items-center justify-center sm:w-1/3">
         <p className="text-2xl p-8 text-center font-bold sm:text-5xl sm:text-left">
           Learn to code by watching others
@@ -95,7 +94,7 @@ function App() {
               placeholder="First Name"
               className={
                 lastNameValidation(formData.firstName) && formData.submitted
-                  ? "border-red-500 border-solid border-[1px] text-black p-3 rounded-lg w-[95%] bg-[url('./images/icon-error.svg')] bg-no-repeat bg-[right_0.5rem_top_0.8rem]"
+                  ? "border-red-500 border-solid border-[1px] text-black p-3 rounded-lg w-[95%] bg-[url('../public/images/icon-error.svg')] bg-no-repeat bg-[right_0.5rem_top_0.8rem]"
                   : "border-gray-400 border-solid border-[1px] text-black p-3 rounded-lg w-[95%]"
               }
               name="firstName"
@@ -118,7 +117,7 @@ function App() {
               placeholder="Last Name"
               className={
                 lastNameValidation(formData.lastName) && formData.submitted
-                  ? "border-red-500 border-solid border-[1px] text-black p-3 rounded-lg w-[95%] bg-[url('./images/icon-error.svg')] bg-no-repeat bg-[right_0.5rem_top_0.8rem]"
+                  ? "border-red-500 border-solid border-[1px] text-black p-3 rounded-lg w-[95%] bg-[url('../public/images/icon-error.svg')] bg-no-repeat bg-[right_0.5rem_top_0.8rem]"
                   : "border-gray-400 border-solid border-[1px] text-black p-3 rounded-lg w-[95%]"
               }
               name="lastName"
@@ -138,7 +137,7 @@ function App() {
               placeholder="Email address"
               className={
                 lastNameValidation(formData.email) && formData.submitted
-                  ? "border-red-500 border-solid border-[1px] text-black p-3 rounded-lg w-[95%] bg-[url('./images/icon-error.svg')] bg-no-repeat bg-[right_0.5rem_top_0.8rem]"
+                  ? "border-red-500 border-solid border-[1px] text-black p-3 rounded-lg w-[95%] bg-[url('../public/images/icon-error.svg')] bg-no-repeat bg-[right_0.5rem_top_0.8rem]"
                   : "border-gray-400 border-solid border-[1px] text-black p-3 rounded-lg w-[95%]"
               }
               name="email"
@@ -157,7 +156,7 @@ function App() {
               placeholder="Password"
               className={
                 lastNameValidation(formData.password) && formData.submitted
-                  ? "border-red-500 border-solid border-[1px] text-black p-3 rounded-lg w-[95%] bg-[url('./images/icon-error.svg')] bg-no-repeat bg-[right_0.5rem_top_0.8rem]"
+                  ? "border-red-500 border-solid border-[1px] text-black p-3 rounded-lg w-[95%] bg-[url('../public/images/icon-error.svg')] bg-no-repeat bg-[right_0.5rem_top_0.8rem]"
                   : "border-gray-400 border-solid border-[1px] text-black p-3 rounded-lg w-[95%]"
               }
               name="password"
